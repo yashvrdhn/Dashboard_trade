@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>HODLINFO</h1>
+        <div class="controls">
+          <div class="controls-center">
+            <select id="currency">
+              <option value="INR">INR</option>
+              <option value="USD">USD</option>
+            </select>
+            <select id="crypto">
+              <option value="BTC">BTC</option>
+              <option value="ETH">ETH</option>
+            </select>
+            <button id="buybtc">Buy BTC</button>
+          </div>
+        </div>
+        <button class="connect-tele">Connect Telegram</button>
+        <div class="container">
+          <input type="checkbox" id="check" />
+          <label for="check" class="button"></label>
+        </div>
+      </div>
+    </header>
+
+    <section class="price-info">
+      <div class="main-info">
+        <div class="stats">
+          <div class="stat">
+            <h2>0.1%</h2>
+            <p>5 Mins</p>
+          </div>
+          <div class="stat">
+            <h2>0.96%</h2>
+            <p>1 Hour</p>
+          </div>
+        </div>
+        
+        <div class="price-section">
+          <h2 class="best-price">Best Price to Trade</h2>
+          <h1 class="price">₹ 26,56,110</h1>
+          <p class="price-subtext">Average BTC/INR net price including commission</p>
+        </div>
+        
+        <div class="changes">
+          <div class="change">
+            <p>2.73%</p>
+            <p>1 Day</p>
+          </div>
+          <div class="change">
+            <p>7.51%</p>
+            <p>7 Days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+
+    <section id="crypto-data" class="crypto-table"></section>
+
+    <footer>
+      <button class="f-btn">Add Hodlinfo to home screen</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
